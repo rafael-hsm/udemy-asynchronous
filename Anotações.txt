@@ -1,0 +1,53 @@
+Ao executar um programa Python o que ocorre?
+
+A) O interpretador Python cria um processo no sistema operacional;
+B) O processo Python cria uma thread (linha de execução) para
+executar o código;
+
+Concorrência é a execução de múltiplas instruções sequenciais ao mesmo tempo.
+
+Dois tipos principais de concorrência:
+
+Programação Paralela;
+Tem sua melhor utilização em tarefas que fazem uso excessivo da CPU.
+1. Operações em strings;
+2. Algoritmos de busca;
+3. Processamento gráfico;
+4. Algoritmos de Processamento numérico; Entre outros.
+
+Programação Assíncrona;
+A programação assíncrona é utilizada em operações de leitura ou escrita em dispositivos
+IO - Input/Output. Ou seja, em operações que podem ser lentas e dependem de um retorno
+de execução, que pode ser sucesso ou falho.
+Em um programa, podemos ter "partes" que precisam ser executadas de forma assíncrona.
+Quando a instrução assíncrona é executada, ao invés do processador ficar esperando sua
+conclusão...ele delega a execução desta sub-tarefa a alguma outra thread ou dispotivo
+e continua fazendo algum outro trabalho ao invés de esperar a execução destas tarefas.
+
+Quando a sub-tarefa assíncrona finaliza a execução a thread principal é notificada e
+faz uso dos resultados. Isso é chamado de funções de call-back.
+
+Em algumas linguagens de programação, ao invés de utilizar funções call-back são utilizados
+outros objetos com operações incompletas conhecidos como promisses, futures ou simplesmente
+tarefa (task);
+
+A programação assíncrona é melhor utilizada em tarefas que exigem uso intensivo de
+IO como:
+1. Lietura ou escrita em bancos de dados;
+2. Chamadas à Web Services (APIs);
+3. Cópia, upload ou download de dados;
+
+Obs. Um terceiro tipo seria a programação distribuída, mas neste curso estamos focando
+na execução de programas em um mesmo computador/servidor.
+
+Conceitos importantes
+Ordem de execução.
+Recursos compartilhados.
+
+GIL - Global Interpreter Lock
+O GIL é um recurso de bloqueio que previne que múltiplas threads nativas executem um código
+Python ao mesmo tempo. Isso foi necessário para manter a thread de execução segura, ou
+seja, não permitindo que outras threads fizessem uso do código em execução desta forma
+cauzasse efeitos indesejados no resultado final.
+
+
