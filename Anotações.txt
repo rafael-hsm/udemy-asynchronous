@@ -51,3 +51,10 @@ seja, não permitindo que outras threads fizessem uso do código em execução d
 cauzasse efeitos indesejados no resultado final.
 
 
+Processamento vs Threads
+Processo é a instância em execução de um programa.
+
+A process creates a thread, called the main thread, to execute a program. Process can
+have multiples threads. Any thread other than the main thread will be a 'child' of the
+main thread.
+
