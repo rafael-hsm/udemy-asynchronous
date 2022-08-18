@@ -51,4 +51,3 @@ Terminou em 33.60 segundos.
 """
 Using thread 
 Finished in 25.62 seconds.
-"""
