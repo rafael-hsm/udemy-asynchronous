@@ -24,6 +24,7 @@ if __name__ == '__main__':
     main()
 
 """
-Terminou em 33.60 segundos.
+Terminou em 33.60 segundos. Laptop
+Terminou em 13.11 segundos. Desktop
 """
 

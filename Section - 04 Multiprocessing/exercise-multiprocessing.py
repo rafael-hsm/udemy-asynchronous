@@ -37,14 +37,17 @@ if __name__ == '__main__':
 
 """
 Terminou em 33.60 segundos.
+Terminou em 13.11 segundos. Desktop
 """
 
 """
 Using thread 
-Finished in 25.62 seconds.
+Finished in 25.62 seconds. Laptop
+Finished in 23.62 seconds. Desktop
 """
 
 """
 Using multiprocessing 
-Finished in 18.81 seconds.
+Finished in 18.81 seconds. Laptop
+Finished in 2.56 seconds. Desktop
 """
