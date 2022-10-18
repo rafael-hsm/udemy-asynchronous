@@ -12,7 +12,7 @@ def main():
 
     print(f"Size of pool: {size_pool}")
 
-    inputs = list(range(7))
+    inputs = list(range(70))
     outputs = pools.map(calcular, inputs)
 
     print(f"Outputs: {outputs}")
